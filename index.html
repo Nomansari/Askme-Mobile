@@ -1,27 +1,1003 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>mobile</h1>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mercado Amusement Park — Official</title>
 
-    <p>all about mobile</p>
-    <p>all about mobile</p>
-    <p>all about mobile</p>
-    <p>all about mobile</p>
-    <p>all about mobile</p>
-    <p>all about mobile</p>
-    <p>all about mobile</p>
-    <p>all about mobile</p>
-    <p>all about mobile</p>
-    <p>all about mobile</p>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nostrum laboriosam vitae, consequuntur dignissimos officia repellendus corporis illum cumque expedita et quisquam, quas necessitatibus aliquid, unde repudiandae consequatur magnam. Molestias.</span><span>Suscipit neque cum fuga aliquid odio iste sit autem assumenda id mollitia aliquam hic praesentium quibusdam quod expedita voluptatum ad qui dolor non labore ipsam, error quae sequi blanditiis. Tenetur.</span><span>Vel voluptatibus quas minus sunt perspiciatis dolore mollitia nobis doloribus debitis tempore eos, illum unde vitae, dolores amet enim! Recusandae aliquid vero sunt nihil veniam quaerat ipsum itaque a porro.</span><span>Repudiandae ipsa aspernatur quae quibusdam fuga eum deserunt pariatur ut blanditiis nam officia quisquam at eveniet, illum, enim hic numquam inventore tenetur animi maiores facilis molestias. Porro fugit dolorum eveniet!</span><span>Adipisci laborum deleniti quia sapiente maiores dignissimos nobis maxime iste illum eligendi hic rem obcaecati, provident voluptas consequatur nostrum autem doloremque assumenda, quibusdam praesentium dolores corporis asperiores aperiam ullam? Quos.</span><span>Reprehenderit natus veritatis eaque quisquam nihil mollitia quos sint voluptatem doloribus. Maiores cumque dolor provident. Explicabo nemo cum ex sunt aliquid voluptas delectus quidem placeat. Exercitationem in excepturi suscipit ipsum?</span><span>Cumque iusto amet, explicabo aperiam ducimus, asperiores provident veritatis quam molestias animi sed ipsum ullam earum, recusandae itaque. Culpa numquam porro quia, exercitationem quaerat aperiam minus mollitia eveniet adipisci iure.</span><span>Et iusto voluptate culpa nemo blanditiis, sapiente perferendis consectetur deleniti dignissimos, ipsum alias. Minus placeat quia magni porro, molestiae maxime beatae soluta quis consequuntur assumenda ex praesentium sapiente libero velit!</span><span>In exercitationem consequatur perspiciatis, quisquam amet nobis iste laudantium fugit adipisci nam debitis perferendis natus dolor possimus suscipit earum repellendus culpa, quia quasi beatae sed totam? Nobis cum incidunt quae?</span><span>Iste autem natus ipsa quibusdam quo velit, fugiat maxime commodi! Nostrum odio nesciunt alias, molestiae, voluptates quibusdam porro fugit sequi qui, numquam sapiente. Molestias distinctio harum odit consequatur illo vero.</span><span>Quas suscipit velit hic provident officiis fuga repellendus aspernatur. Voluptatem repellendus aut error culpa architecto nisi quas illo laborum quaerat facere optio eos, explicabo quia nulla dolores repellat maxime nam.</span><span>Laborum dicta veritatis ratione culpa sint ad reprehenderit, tenetur consequatur quae maxime distinctio provident ea ipsam suscipit maiores sequi doloribus assumenda rerum, aliquam iure beatae? Labore iste animi beatae dolor.</span><span>Dolore hic ratione delectus a, cupiditate, quaerat asperiores perferendis repellat consectetur dolorum molestiae nisi error pariatur expedita minus similique tenetur illum dolor sed odio officiis incidunt rerum? Facilis, perspiciatis mollitia?</span><span>Repellendus, libero non ipsam fugit dolores error pariatur quia aspernatur est nesciunt minus iusto accusamus inventore aperiam, ducimus quisquam rerum maxime necessitatibus nulla provident iste quam quas hic? Minus, iusto!</span><span>Nesciunt minima facere iusto consequatur totam qui dolore consequuntur ipsum, animi praesentium, voluptas commodi cupiditate odit quas optio sed sunt accusamus quo atque temporibus beatae? Repellat exercitationem cumque suscipit dolorum?</span><span>Veritatis similique, quas delectus, eveniet hic est id quidem quaerat aspernatur harum corporis libero, quis fuga? Modi minima laborum corporis ex tenetur neque atque at facilis deleniti. Itaque, repellendus in!</span><span>Sapiente eligendi est, rerum minima, tenetur doloremque fugiat alias sequi illum cumque esse in, ratione vel? Nemo porro molestias aspernatur velit dignissimos eveniet esse enim ut fugit. Obcaecati, sint recusandae?</span><span>Deleniti error non impedit asperiores ratione enim qui dolorum quod. Et, ipsam eum error officiis, adipisci debitis culpa similique corporis provident accusamus, consequuntur autem saepe porro magnam asperiores iure praesentium!</span><span>Non quia amet distinctio laborum dolores velit ex eveniet voluptates enim, voluptatum, aliquam quo? Nesciunt corrupti ad eum consequatur soluta repellat, quisquam quas. Corrupti nobis nam porro libero doloremque aut.</span><span>Facilis consequatur quas enim soluta, eius magnam itaque vitae amet tenetur explicabo! Cupiditate repudiandae fugiat est enim culpa explicabo harum ea eum necessitatibus, minima placeat unde architecto in obcaecati totam.</span></p>
+    <style>
+      :root{
+        --bg:#070708;
+        --card:#0f1113;
+        --muted:#9aa0a6;
+        --accent:#00d1a1;
+        --accent-2:#00a187;
+        --glass: rgba(255,255,255,0.03);
+      }
+      html{scroll-behavior:smooth}
+      body{background:var(--bg);color:#e9eef1;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+      .navbar, .nav-link{background:transparent}
+      .navbar-brand{font-weight:700;color:#fff}
+      .nav-link{color:var(--muted) !important}
+      .nav-link:hover{color:var(--accent) !important}
+      .hero{background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;min-height:70vh;display:flex;align-items:center}
+      .card-dark{background:var(--card);border:1px solid rgba(255,255,255,0.03)}
+      .section-heading{color:#fff}
+      .accent{color:var(--accent)}
+      .btn-accent{background:var(--accent);border:none}
+      .btn-accent:hover{background:var(--accent-2)}
+      .zone-img{height:200px;object-fit:cover;width:100%;border-radius:8px}
+      .gallery-img{height:180px;object-fit:cover;width:100%;border-radius:6px}
+      .testimonial{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px}
+      footer{background:#040405;padding:40px 0;color:var(--muted)}
+      .sticky-top{backdrop-filter: blur(6px);background:rgba(7,7,8,0.5)}
+      .pricing-card{border-left:4px solid rgba(0,0,0,0.2);}
+      .sitemap ul{list-style:none;padding-left:0}
+      @media (max-width:767px){.hero{min-height:50vh}.zone-img{height:140px}.gallery-img{height:120px}}
 
-    <script src="./script.js"></script>
-</body>
+      /* small helpers */
+      .muted{color:var(--muted)}
+      .dot{height:10px;width:10px;background:var(--accent);display:inline-block;border-radius:50%}
+      :root{
+  --bg:#070708;
+  --card:#0f1113;
+  --muted:#9aa0a6;
+  --accent:#00d1a1;
+  --accent-2:#00a187;
+  --glass: rgba(255,255,255,0.03);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:#e9eef1;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+.navbar, .nav-link{background:transparent}
+.navbar-brand{font-weight:700;color:#fff}
+.nav-link{color:var(--muted) !important}
+.nav-link:hover{color:var(--accent) !important}
+.hero{background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;min-height:70vh;display:flex;align-items:center}
+.card-dark{background:var(--card);border:1px solid rgba(255,255,255,0.03)}
+.section-heading{color:#fff}
+.accent{color:var(--accent)}
+.btn-accent{background:var(--accent);border:none}
+.btn-accent:hover{background:var(--accent-2)}
+.zone-img{height:200px;object-fit:cover;width:100%;border-radius:8px}
+.gallery-img{height:180px;object-fit:cover;width:100%;border-radius:6px}
+.testimonial{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px}
+footer{background:#040405;padding:40px 0;color:var(--muted)}
+.sticky-top{backdrop-filter: blur(6px);background:rgba(7,7,8,0.5)}
+.pricing-card{border-left:4px solid rgba(0,0,0,0.2);}
+.sitemap ul{list-style:none;padding-left:0}
+@media (max-width:767px){.hero{min-height:50vh}.zone-img{height:140px}.gallery-img{height:120px}}
+/* small helpers */
+.muted{color:var(--muted)}
+.dot{height:10px;width:10px;background:var(--accent);display:inline-block;border-radius:50%}
+
+/* Forms: dark inputs */
+.form-control-dark{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff}
+.form-select.form-control-dark{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff}
+
+/* Buttons */
+.btn-outline-light{border-color:rgba(255,255,255,0.12);color:#fff}
+
+/* Modal content tweaks */
+.modal-content.card-dark{background:var(--card);color:#e9eef1}
+
+/* Small utilities */
+.h-100{height:100%}
+.p-3{padding:1rem}
+
+/* Accessibility focus */
+a:focus, button:focus, input:focus, select:focus, textarea:focus{outline:2px solid rgba(0,209,161,0.18);outline-offset:2px}
+
+/* Responsive image utilities */
+img{max-width:100%;height:auto}
+
+/* Minor animations */
+.card-dark{transition:transform 220ms ease, box-shadow 220ms ease}
+.card-dark:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+
+/* Hide empty video thumbnails gracefully */
+video:empty{display:none}
+
+   </style>
+  </head>
+  <body>
+
+    <!-- NAVIGATION & HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mercado Park</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#zones">Zones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#entertainment">Entertainment</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dining">Dining</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tickets">Tickets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-accent btn-sm" data-bs-toggle="modal" data-bs-target="#bookModal">Book Now</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="hero">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-7 text-white">
+            <h1 class="display-5 fw-bold">Welcome to Mercado Amusement Park</h1>
+            <p class="lead muted">45 acres of themed worlds, thrilling rides, world-class dining and live entertainment — developed over 5 years by Seth Groups. A national pride and the city's prime destination.</p>
+            <div class="d-flex gap-2 mt-4">
+              <a class="btn btn-accent btn-lg" href="#tickets">Buy Tickets</a>
+              <a class="btn btn-outline-light btn-lg" href="#zones">Explore Zones</a>
+            </div>
+            <div class="mt-4 text-muted">Open daily: 10:00 AM — 10:00 PM • Address: Mercado Park Drive, City Center</div>
+          </div>
+          <div class="col-md-5 d-none d-md-block">
+            <div class="card card-dark p-3 shadow-lg">
+              <img src="https://images.unsplash.com/photo-1507403568676-1f5b8d58b7a5?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded" alt="rides">
+              <div class="mt-3">
+                <h5 class="mb-1">Today's Highlight</h5>
+                <p class="muted">Live stunt show at 6:00 PM near Central Plaza. Book a seat in Events.</p>
+                <div class="d-flex justify-content-between">
+                  <small class="muted">Weather: Sunny • 28°C</small>
+                  <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#eventsModal">View Events</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-5">
+
+      <!-- ABOUT US -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="section-heading">About Mercado</h2>
+              <p class="muted">Mercado Amusement Park was conceived and developed by <strong>Seth Groups</strong> — a five-year flagship project focused on sustainable development, immersive themed experiences, and family entertainment. The park covers 45 acres and integrates modern ride engineering with themed landscaping.</p>
+
+              <h5 class="mt-4">Development Timeline</h5>
+              <ul class="muted">
+                <li><strong>Year 0:</strong> Concept & Master Plan</li>
+                <li><strong>Year 1-2:</strong> Groundworks & Infrastructure</li>
+                <li><strong>Year 3-4:</strong> Attractions construction & Testing</li>
+                <li><strong>Year 5:</strong> Soft launch, staff training, and grand opening</li>
+              </ul>
+              <p class="mt-3 muted">Seth Groups remains actively involved in park operations, investments in guest experience, and community programs.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="card card-dark p-3">
+                <h5>Quick Facts</h5>
+                <div class="row mt-3">
+                  <div class="col-6"><strong>Area</strong><p class="muted">45 acres</p></div>
+                  <div class="col-6"><strong>Rides</strong><p class="muted">35+ major attractions</p></div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-6"><strong>Construction</strong><p class="muted">5 years</p></div>
+                  <div class="col-6"><strong>Operator</strong><p class="muted">Seth Groups</p></div>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#timelineModal">Read full timeline</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ZONES & ATTRACTIONS -->
+      <section id="zones" class="py-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="section-heading">Zones & Attractions</h2>
+            <div class="muted">Hover or tap cards to view details</div>
+          </div>
+
+          <div class="row g-4 mt-3">
+            <!-- Zone card repeated -->
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=800&q=60" class="zone-img" alt="Adventure Zone">
+                <div class="mt-3">
+                  <h5>Adventure Zone</h5>
+                  <p class="muted small">High-thrill coasters, rope courses and zip-lines for adrenaline lovers.</p>
+                  <div class="d-flex justify-content-between mt-2">
+                    <small class="muted">Rides: 10+</small>
+                    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#attractionModal" data-title="Adventure Zone" data-desc="High-thrill coasters, rope courses, and our flagship wing-coaster. Recommended age 12+." data-img="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=800&q=60">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=60" class="zone-img" alt="Family Zone">
+                <div class="mt-3">
+                  <h5>Family Zone</h5>
+                  <p class="muted small">Gentle rides, playgrounds, and family shows perfect for all ages.</p>
+                  <div class="d-flex justify-content-between mt-2">
+                    <small class="muted">Rides: 8+</small>
+                    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#attractionModal" data-title="Family Zone" data-desc="Gentle rides, interactive playgrounds, and family-friendly shows. Ideal for parents with kids." data-img="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=60">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=800&q=60" class="zone-img" alt="Water World">
+                <div class="mt-3">
+                  <h5>Water World</h5>
+                  <p class="muted small">Wave pools, slides, and a lazy river — seasonal splash fun.</p>
+                  <div class="d-flex justify-content-between mt-2">
+                    <small class="muted">Pools: 4</small>
+                    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#attractionModal" data-title="Water World" data-desc="Wave pools, multi-lane slides and themed cabanas. Swimwear required." data-img="https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=800&q=60">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <img src="https://images.unsplash.com/photo-1505483531331-7f1a0f5a0cc9?auto=format&fit=crop&w=800&q=60" class="zone-img" alt="Heritage Lane">
+                <div class="mt-3">
+                  <h5>Heritage Lane</h5>
+                  <p class="muted small">Cultural exhibits, artisan markets and slow-paced rides celebrating local history.</p>
+                  <div class="d-flex justify-content-between mt-2">
+                    <small class="muted">Exhibits: 6</small>
+                    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#attractionModal" data-title="Heritage Lane" data-desc="Cultural exhibits, live artisan demonstrations and a heritage carousel." data-img="https://images.unsplash.com/photo-1505483531331-7f1a0f5a0cc9?auto=format&fit=crop&w=800&q=60">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=60" class="zone-img" alt="Tech Zone">
+                <div class="mt-3">
+                  <h5>Tech Zone</h5>
+                  <p class="muted small">VR experiences, interactive simulators and gamified attractions.</p>
+                  <div class="d-flex justify-content-between mt-2">
+                    <small class="muted">Attractions: 5</small>
+                    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#attractionModal" data-title="Tech Zone" data-desc="Cutting-edge VR and AR rides with motion-simulator pods." data-img="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=60">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=60" class="zone-img" alt="Nature Trail">
+                <div class="mt-3">
+                  <h5>Nature Trail</h5>
+                  <p class="muted small">Scenic walks, bird-watching points, and botanical gardens.</p>
+                  <div class="d-flex justify-content-between mt-2">
+                    <small class="muted">Trails: 3</small>
+                    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#attractionModal" data-title="Nature Trail" data-desc="Peaceful trails, guided botanical tours and picnic spots." data-img="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=60">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ENTERTAINMENT -->
+      <section id="entertainment" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Entertainment</h2>
+          <p class="muted">From nightly parades to live concerts and children's theatre — our calendar is full year-round.</p>
+
+          <div class="row g-4 mt-3">
+            <div class="col-md-6">
+              <div class="card card-dark p-3">
+                <h5>Live Shows</h5>
+                <p class="muted">Stunt shows, musical performances, and cultural showcases in the Central Plaza amphitheatre.</p>
+                <ul class="muted">
+                  <li>Stunt Spectacle — Daily 6:00 PM</li>
+                  <li>Family Parade — Sat & Sun 5:00 PM</li>
+                  <li>Open Mic Nights — Fridays 8:00 PM</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-dark p-3">
+                <h5>Special Events</h5>
+                <p class="muted">Seasonal events, festivals and private event hosting.</p>
+                <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#eventsModal">View Calendar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESTAURANTS & DINING -->
+      <section id="dining" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Restaurants & Dining</h2>
+          <p class="muted">A curated mix of food halls, quick bites and sit-down restaurants offering international and local cuisine.</p>
+
+          <div class="row g-4 mt-3">
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <h5>Mercado Food Hall</h5>
+                <p class="muted small">Street-food inspired stalls and dessert bars.</p>
+                <button class="btn btn-sm btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#menuModal" data-title="Mercado Food Hall" data-menu="Tacos, Shawarma, Waffles, Fresh Juices">View Menu</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <h5>Riverside Grill</h5>
+                <p class="muted small">Full-service dining with seasonal tasting menus and riverside seating.</p>
+                <button class="btn btn-sm btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#menuModal" data-title="Riverside Grill" data-menu="Grilled specialties, seafood, vegetarian options">View Menu</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <h5>Café Carousel</h5>
+                <p class="muted small">Coffee, pastries and light meals — family-friendly seating.</p>
+                <button class="btn btn-sm btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#menuModal" data-title="Café Carousel" data-menu="Coffee, Pastries, Sandwiches">View Menu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TICKETS & PRICING -->
+      <section id="tickets" class="py-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="section-heading">Tickets & Pricing</h2>
+            <div>
+              <div class="form-check form-check-inline text-muted">
+                <input class="form-check-input" type="radio" name="priceType" id="weekday" value="weekday" checked>
+                <label class="form-check-label muted" for="weekday">Weekday</label>
+              </div>
+              <div class="form-check form-check-inline text-muted">
+                <input class="form-check-input" type="radio" name="priceType" id="weekend" value="weekend">
+                <label class="form-check-label muted" for="weekend">Weekend</label>
+              </div>
+              <div class="form-check form-check-inline text-muted">
+                <input class="form-check-input" type="radio" name="priceType" id="family" value="family">
+                <label class="form-check-label muted" for="family">Family Pack</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-3">
+            <div class="col-md-4">
+              <div class="card card-dark p-3 pricing-card h-100">
+                <h5>Adult (Ages 13+)</h5>
+                <div class="price-display mt-3">
+                  <h3 id="adultPrice">$35</h3>
+                  <p class="muted small">Includes park access and standard ride passes.</p>
+                </div>
+                <button class="btn btn-accent mt-2" data-bs-toggle="modal" data-bs-target="#bookModal" data-ticket-type="Adult">Buy</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-dark p-3 pricing-card h-100">
+                <h5>Child (Ages 3-12)</h5>
+                <div class="price-display mt-3">
+                  <h3 id="childPrice">$20</h3>
+                  <p class="muted small">Child-friendly rides & shows included.</p>
+                </div>
+                <button class="btn btn-accent mt-2" data-bs-toggle="modal" data-bs-target="#bookModal" data-ticket-type="Child">Buy</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-dark p-3 pricing-card h-100">
+                <h5>Senior (65+)</h5>
+                <div class="price-display mt-3">
+                  <h3 id="seniorPrice">$25</h3>
+                  <p class="muted small">Discounted access for seniors.</p>
+                </div>
+                <button class="btn btn-accent mt-2" data-bs-toggle="modal" data-bs-target="#bookModal" data-ticket-type="Senior">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 muted small">Prices shown are per person. Family Pack automatically applies if you select 'Family Pack' — for example 2 adults + 2 children bundle.</div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Gallery</h2>
+          <p class="muted">Browse photos and short clips from around the park.</p>
+          <div class="row g-3 mt-3">
+            <div class="col-sm-6 col-md-4"><img src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?auto=format&fit=crop&w=800&q=60" class="gallery-img" alt="gallery"></div>
+            <div class="col-sm-6 col-md-4"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60" class="gallery-img" alt="gallery"></div>
+            <div class="col-sm-6 col-md-4"><img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&w=800&q=60" class="gallery-img" alt="gallery"></div>
+            <div class="col-sm-6 col-md-4"><img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=800&q=60" class="gallery-img" alt="gallery"></div>
+            <div class="col-sm-6 col-md-4"><img src="https://images.unsplash.com/photo-1518600506278-4e8ef466b810?auto=format&fit=crop&w=800&q=60" class="gallery-img" alt="gallery"></div>
+            <div class="col-sm-6 col-md-4"><video controls style="width:100%;height:180px;border-radius:6px;"><source src="" type="video/mp4">Your browser does not support video tag.</video></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACCOUNT CREATION -->
+      <section id="account" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Account</h2>
+          <p class="muted">Create an account to save bookings, get offers and receive event notifications.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+              <button class="btn btn-outline-light ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </div>
+            <div class="col-md-6 muted">Having an account speeds up booking and stores your tickets in the account dashboard (demo).</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ONLINE TICKET BOOKING (modal-driven) -->
+      <section id="booking" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Online Booking</h2>
+          <p class="muted">Start the booking flow which opens a modal with steps: select tickets, add extras, and confirm checkout (dummy).</p>
+          <div class="mt-3">
+            <button class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#bookModal">Start Booking</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h2 class="section-heading">Contact Us</h2>
+              <p class="muted">Questions? Reach out to our guest services.</p>
+              <p class="muted"><i class="fa fa-map-marker-alt"></i> Mercado Park Drive, City Center</p>
+              <p class="muted"><i class="fa fa-phone"></i> +1 (555) 123-4567</p>
+              <p class="muted"><i class="fa fa-envelope"></i> info@mercado-park.example</p>
+              <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactModal">Send a Message</button>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-dark p-3">
+                <h5 class="mb-3">Visitor Information</h5>
+                <ul class="muted">
+                  <li>Opening Hours: 10:00 — 22:00 (Daily)</li>
+                  <li>Lost & Found located at Guest Services</li>
+                  <li>Accessible routes and services available</li>
+                </ul>
+                <div class="mt-3">
+                  <iframe style="width:100%;height:200px;border-radius:6px;" src="https://www.google.com/maps/embed?pb=!1m18" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DISCLAIMER -->
+      <section id="disclaimer" class="py-4">
+        <div class="container">
+          <div class="card card-dark p-3">
+            <h5>Disclaimer</h5>
+            <p class="muted small">Information on this site is for general guidance. Attractions may close without notice due to maintenance or weather. Prices are indicative and subject to change. Mercado Amusement Park and Seth Groups are not liable for personal injury beyond the scope of statutory obligations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SITEMAP -->
+      <section id="sitemap" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Sitemap</h2>
+          <div class="row">
+            <div class="col-md-4 sitemap">
+              <h6 class="muted">Main</h6>
+              <ul>
+                <li><a class="muted" href="#hero">Home</a></li>
+                <li><a class="muted" href="#about">About</a></li>
+                <li><a class="muted" href="#zones">Zones</a></li>
+                <li><a class="muted" href="#tickets">Tickets</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 sitemap">
+              <h6 class="muted">Guest Services</h6>
+              <ul>
+                <li><a class="muted" href="#contact">Contact</a></li>
+                <li><a class="muted" href="#booking">Booking</a></li>
+                <li><a class="muted" href="#account">Account</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 sitemap">
+              <h6 class="muted">More</h6>
+              <ul>
+                <li><a class="muted" href="#gallery">Gallery</a></li>
+                <li><a class="muted" href="#events">Events</a></li>
+                <li><a class="muted" href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">FAQ</h2>
+          <div class="accordion card-dark p-3 mt-3" id="faqAcc">
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="f1"><button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What are the park hours?</button></h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body muted">Open daily from 10:00 AM to 10:00 PM. Hours may vary on special event days.</div></div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="f2"><button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Is parking available?</button></h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body muted">Yes — on-site parking with accessible spaces. Fees may apply for large events.</div></div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="f3"><button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Can I bring outside food?</button></h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body muted">Small snacks and baby food allowed. Outside catering for group events requires prior approval.</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Testimonials</h2>
+          <div class="row g-3 mt-3">
+            <div class="col-md-4">
+              <div class="testimonial">
+                <strong>Amna K.</strong>
+                <p class="muted small">"A magical day for the whole family. The rides are thrilling and the staff are helpful."</p>
+                <div>⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial">
+                <strong>Saeed R.</strong>
+                <p class="muted small">"Loved the Riverside Grill. Great food and views — highly recommended."</p>
+                <div>⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial">
+                <strong>Fatima Z.</strong>
+                <p class="muted small">"Plenty for kids, excellent safety measures and clean facilities."</p>
+                <div>⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EVENTS CALENDAR -->
+      <section id="events" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Events Calendar</h2>
+          <p class="muted">Key upcoming events — click to register.</p>
+          <div class="row g-3 mt-3">
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <h6>Summer Music Festival</h6>
+                <p class="muted small">June 15 — Open-air concerts across the park.</p>
+                <button class="btn btn-sm btn-outline-light">Register</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <h6>Halloween Spooktacular</h6>
+                <p class="muted small">Oct 28 - 31 — Nightly haunted trails and shows.</p>
+                <button class="btn btn-sm btn-outline-light">Register</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-dark p-3 h-100">
+                <h6>Winter Light Parade</h6>
+                <p class="muted small">Dec 21 — A luminous parade for the holidays.</p>
+                <button class="btn btn-sm btn-outline-light">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GROUP BOOKINGS -->
+      <section id="groups" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Group & Corporate Bookings</h2>
+          <p class="muted">Information about group rates, school trips, and corporate events.</p>
+          <div class="card card-dark p-3">
+            <h5>Group Packages</h5>
+            <ul class="muted">
+              <li>School Trip — Educational guided tour + discounted per-student fare</li>
+              <li>Corporate Outings — Meeting spaces, team-building activities, and bulk ticket pricing</li>
+              <li>Private Rentals — After-hours closing available for private events</li>
+            </ul>
+            <div class="mt-3">
+              <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactModal">Request a Quote</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SAFETY & GUIDELINES -->
+      <section id="safety" class="py-5">
+        <div class="container">
+          <h2 class="section-heading">Safety & Visitor Guidelines</h2>
+          <div class="row g-4 mt-3">
+            <div class="col-md-6">
+              <div class="card card-dark p-3">
+                <h5>Park Rules</h5>
+                <ul class="muted small">
+                  <li>Follow ride height & safety restrictions</li>
+                  <li>Supervise children at all times</li>
+                  <li>No smoking in public areas</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-dark p-3">
+                <h5>Accessibility</h5>
+                <p class="muted small">Accessible routes, ride accommodations and guest services available. Contact Guest Services for assistance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Mercado Amusement Park</h5>
+            <p class="muted small">© Mercado Park • Developed by Seth Groups</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="muted">Follow Us</h6>
+            <p><i class="fab fa-facebook fa-lg me-2"></i><i class="fab fa-instagram fa-lg me-2"></i><i class="fab fa-twitter fa-lg"></i></p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="muted">Quick Links</h6>
+            <p class="muted small">Privacy • Terms • Careers</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- Attraction Details Modal -->
+    <div class="modal fade" id="attractionModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content card-dark p-3">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="attractionTitle">Attraction</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <img id="attractionImg" src="" alt="attraction" style="width:100%;border-radius:8px;object-fit:cover;height:260px;">
+              </div>
+              <div class="col-md-6">
+                <p id="attractionDesc" class="muted"></p>
+                <ul class="muted small">
+                  <li>Operating Hours: 10:00 — 21:00</li>
+                  <li>Height & Age restrictions apply to select rides</li>
+                </ul>
+                <div class="mt-3">
+                  <button class="btn btn-accent" data-bs-target="#bookModal" data-bs-toggle="modal">Book Ride</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline Modal -->
+    <div class="modal fade" id="timelineModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content card-dark p-3">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Development Timeline</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body muted">
+            <ol>
+              <li><strong>Concept Phase:</strong> Market studies and master planning (Year 0)</li>
+              <li><strong>Infrastructure:</strong> Site works and utilities (Year 1)</li>
+              <li><strong>Attractions:</strong> Construction and testing (Years 2-4)</li>
+              <li><strong>Operations:</strong> Recruitment, training and soft opening (Year 5)</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Modal -->
+    <div class="modal fade" id="menuModal" tabindex="-1">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content card-dark p-3">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="menuTitle">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body muted" id="menuBody">Loading...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content card-dark p-3">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Member Login</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control form-control-dark" id="loginEmail" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control form-control-dark" id="loginPass" required>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-accent" type="submit">Login</button>
+                <a href="#" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="muted">Create an account</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content card-dark p-3">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Create Account</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control form-control-dark" id="regName" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control form-control-dark" id="regEmail" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control form-control-dark" id="regPass" required>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-accent" type="submit">Create Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Modal (Multi-step dummy booking) -->
+    <div class="modal fade" id="bookModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content card-dark p-3">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Book Tickets</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div id="bookingSteps">
+              <!-- Step 1 -->
+              <div id="step1">
+                <h6>Select Tickets</h6>
+                <div class="row g-2">
+                  <div class="col-md-4"><label class="form-label small">Adult</label><input type="number" min="0" value="1" class="form-control form-control-dark" id="qtyAdult"></div>
+                  <div class="col-md-4"><label class="form-label small">Child</label><input type="number" min="0" value="0" class="form-control form-control-dark" id="qtyChild"></div>
+                  <div class="col-md-4"><label class="form-label small">Senior</label><input type="number" min="0" value="0" class="form-control form-control-dark" id="qtySenior"></div>
+                </div>
+                <div class="mt-3 d-flex justify-content-between">
+                  <small class="muted">Select date & time at the next step</small>
+                  <button class="btn btn-accent" id="toStep2">Next</button>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div id="step2" style="display:none;">
+                <h6>Choose Date & Extras</h6>
+                <div class="row g-2">
+                  <div class="col-md-6"><label class="form-label small">Visit Date</label><input type="date" class="form-control form-control-dark" id="visitDate"></div>
+                  <div class="col-md-6"><label class="form-label small">Extras</label>
+                    <select class="form-select form-control-dark" id="extrasSelect"><option value="none">No extras</option><option value="fastpass">FastPass (+$20/adult)</option><option value="locker">Locker (+$5)</option></select>
+                  </div>
+                </div>
+                <div class="mt-3 d-flex justify-content-between">
+                  <button class="btn btn-outline-light" id="backTo1">Back</button>
+                  <button class="btn btn-accent" id="toStep3">Review & Pay</button>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div id="step3" style="display:none;">
+                <h6>Review & Payment (Demo)</h6>
+                <div id="reviewBox" class="muted small">Calculating...</div>
+                <div class="mt-3 d-flex justify-content-between">
+                  <button class="btn btn-outline-light" id="backTo2">Back</button>
+                  <button class="btn btn-accent" id="confirmBooking">Confirm & Pay (Demo)</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Submission Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content card-dark p-3">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Contact Guest Services</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="mb-3"><label class="form-label">Name</label><input class="form-control form-control-dark" required id="contactName"></div>
+              <div class="mb-3"><label class="form-label">Email</label><input class="form-control form-control-dark" type="email" required id="contactEmail"></div>
+              <div class="mb-3"><label class="form-label">Message</label><textarea class="form-control form-control-dark" rows="4" required id="contactMsg"></textarea></div>
+              <div class="d-flex justify-content-end"><button class="btn btn-accent" type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events Modal (list) -->
+    <div class="modal fade" id="eventsModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content card-dark p-3">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Events Calendar</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body muted">
+            <ul>
+              <li>Stunt Spectacle — Daily 6:00 PM (Central Plaza)</li>
+              <li>Parade — Sat & Sun 5:00 PM</li>
+              <li>Seasonal Festivals — See website for dates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Attraction modal populate
+      var attractionModal = document.getElementById('attractionModal');
+      attractionModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var title = button.getAttribute('data-title') || 'Attraction';
+        var desc = button.getAttribute('data-desc') || '';
+        var img = button.getAttribute('data-img') || '';
+        document.getElementById('attractionTitle').textContent = title;
+        document.getElementById('attractionDesc').textContent = desc;
+        document.getElementById('attractionImg').src = img;
+      });
+
+      // Menu modal populate
+      var menuModal = document.getElementById('menuModal');
+      menuModal.addEventListener('show.bs.modal', function(event){
+        var btn = event.relatedTarget;
+        var title = btn.getAttribute('data-title') || 'Menu';
+        var menu = btn.getAttribute('data-menu') || 'Menu not available';
+        document.getElementById('menuTitle').textContent = title;
+        document.getElementById('menuBody').textContent = menu;
+      });
+
+      // Pricing dynamic toggles
+      function setPricing(type){
+        var adult = document.getElementById('adultPrice');
+        var child = document.getElementById('childPrice');
+        var senior = document.getElementById('seniorPrice');
+        if(type==='weekday'){ adult.textContent = '$35'; child.textContent = '$20'; senior.textContent = '$25'; }
+        if(type==='weekend'){ adult.textContent = '$45'; child.textContent = '$25'; senior.textContent = '$30'; }
+        if(type==='family'){ adult.textContent = '$120 (2A + 2C)'; child.textContent = '$120 (2A + 2C)'; senior.textContent = '$100 (Family/Senior)'; }
+      }
+      document.querySelectorAll('input[name="priceType"]').forEach(function(r){ r.addEventListener('change', function(e){ setPricing(e.target.value); }); });
+
+      // Booking modal flow
+      document.getElementById('toStep2').addEventListener('click', function(){
+        document.getElementById('step1').style.display='none';
+        document.getElementById('step2').style.display='block';
+      });
+      document.getElementById('backTo1').addEventListener('click', function(){
+        document.getElementById('step1').style.display='block';
+        document.getElementById('step2').style.display='none';
+      });
+      document.getElementById('toStep3').addEventListener('click', function(){
+        // prepare review
+        var a = parseInt(document.getElementById('qtyAdult').value)||0;
+        var c = parseInt(document.getElementById('qtyChild').value)||0;
+        var s = parseInt(document.getElementById('qtySenior').value)||0;
+        var extras = document.getElementById('extrasSelect').value;
+        var date = document.getElementById('visitDate').value;
+        // get current pricing selection
+        var type = document.querySelector('input[name="priceType"]:checked').value;
+        var pAdult = (type==='weekend')?45:35;
+        var pChild = (type==='weekend')?25:20;
+        var pSenior = (type==='weekend')?30:25;
+        if(type==='family'){
+          var total = 0; if(a+c+s>0){ total = 120; }
+        } else {
+          var total = a*pAdult + c*pChild + s*pSenior;
+        }
+        if(extras==='fastpass') total += 20 * a;
+        if(extras==='locker') total += 5;
+        var review = `Date: ${date || 'Not selected'}\nAdults: ${a} x $${pAdult} | Children: ${c} x $${pChild} | Seniors: ${s} x $${pSenior} \nExtras: ${extras} \n\nTotal (demo): $${total}`;
+        document.getElementById('reviewBox').innerText = review;
+
+        document.getElementById('step2').style.display='none';
+        document.getElementById('step3').style.display='block';
+      });
+      document.getElementById('backTo2').addEventListener('click', function(){
+        document.getElementById('step2').style.display='block';
+        document.getElementById('step3').style.display='none';
+      });
+      document.getElementById('confirmBooking').addEventListener('click', function(){
+        // simulate success
+        var modalEl = document.getElementById('bookModal');
+        var modal = bootstrap.Modal.getInstance(modalEl);
+        modal.hide();
+        alert('Booking confirmed (demo). A confirmation email would be sent in a production site.');
+      });
+
+      // Simple register/login handlers (dummy)
+      document.getElementById('registerForm').addEventListener('submit', function(e){ e.preventDefault(); var m = bootstrap.Modal.getInstance(document.getElementById('registerModal')); m.hide(); alert('Account created (demo).'); });
+      document.getElementById('loginForm').addEventListener('submit', function(e){ e.preventDefault(); var m = bootstrap.Modal.getInstance(document.getElementById('loginModal')); m.hide(); alert('Logged in (demo).'); });
+
+      // Contact form submit
+      document.getElementById('contactForm').addEventListener('submit', function(e){ e.preventDefault(); var m = bootstrap.Modal.getInstance(document.getElementById('contactModal')); m.hide(); alert('Message sent (demo). Guest Services will respond.'); });
+
+      // Populate ticket-type on quick buy buttons
+      document.querySelectorAll('[data-ticket-type]').forEach(function(b){ b.addEventListener('click', function(e){ var t = b.getAttribute('data-ticket-type'); if(t==='Adult') document.getElementById('qtyAdult').value = 1; if(t==='Child') document.getElementById('qtyChild').value = 1; if(t==='Senior') document.getElementById('qtySenior').value = 1; }); });
+
+      // smooth scrolling offset for fixed nav
+      document.querySelectorAll('a.nav-link').forEach(function(a){ a.addEventListener('click', function(e){ if(a.hash){ e.preventDefault(); var el = document.querySelector(a.hash); if(el){ var y = el.getBoundingClientRect().top + window.scrollY - 70; window.scrollTo({top:y,behavior:'smooth'}); } } }); });
+
+      // set default pricing
+      setPricing('weekday');
+
+    </script>
+  </body>
 </html>
